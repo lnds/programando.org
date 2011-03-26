@@ -1,8 +1,8 @@
-#include <iostream.h>
+ï»¿#include <iostream.h>
 
-// este código implementa la rotación de arreglos usando la técnica descrita en 
+// este cÃ³digo implementa la rotaciÃ³n de arreglos usando la tÃ©cnica descrita en 
 // http://www.programando.org/blog/2011/03/rotaciones/
-// basado en el segundo capítulo de programming pearls, de Jon Bentley.
+// basado en el segundo capÃ­tulo de programming pearls, de Jon Bentley.
  
 template <class T>
 void reverse(T A[], int i, int j)
