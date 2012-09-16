@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="sistemal.js"></script>
+		<script type="text/javascript" src="turtle/min/jquery-turtle.min.js"></script>
+		<title>Sistemas L</title>
+	</head>
+	<body>
+		<form>
+			<select id="selector" onchange="this.form.prog.value=this.value;return false;">
+				<option value="lar 20
+ang 30
+axi D
+D:LALALALALALA
+L:C++C++C++C++C++C++C
+C:FFC
+U:------
+A:Uff+F+Fb-b-bb++++
+iter 4">sistema propuesto</option>
+				<option value="lar 20
+ang 15
+axi S
+S:FP
+P:FT+++H----------FT-----H--T+R
+H:F-F-F----------F-F-F----
+T:FT
+R:FU
+U:EEEEEEEEEEEEH++H++H++H
+E:F++F--B++B
+iter 5">flor mia v1</option>
+				<option value="lar 20
+ang 15
+axi S
+S:------bbbbbFP
+P:FT+++HGGGGGFTGG-HGTR
+T:FT
+R:FU
+G:--
+U:EEEEEEEEEEEEH+H+H+H+++++H+H+H
+H:F-F-F----------F-F-F---
+E:F++F--B++B
+iter 8">flor mia v2</option>
+			</select><br/>
+			<textarea cols="40" rows="12" id="prog" name="prog">
+lar 20
+ang 30
+axi D
+D:LALALALALALA
+L:C++C++C++C++C++C++C
+C:FFC
+U:------
+A:Uff+F+Fb-b-bb++++
+iter 4</textarea><br/>
+			<button id="test" name="test" onclick="go(this.form['prog'].value);return false;">go!</button>
+		</form>
+		<div id="canv"></div>
+	</body>
+</html>
