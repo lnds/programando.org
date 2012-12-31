@@ -17,13 +17,15 @@ Probablemente tu jefe, y mi jefe, sin ser informáticos, ni programadores sean m
 
 Sí, Excel, ese que usan muchos de tus colegas no informáticos, soporta perfectamente el paradigma funcional.
 
-[![](http://www.programando.org/blog/wp-content/uploads/2012/11/excel.jpg)](http://www.programando.org/blog/wp-content/uploads/2012/11/excel.jpg)
+{% img center http://www.programando.org/blog/wp-content/uploads/2012/11/excel.jpg %}
+
+<!-- more -->
 
 Primero en Excel tienes **valores**, números, o a veces textos, que colocas en celdas. Por ejemplo, puedes colocar en la celda A1 el valor 2, y en la celda A2 el valor 3.
 
 Después tienes **funciones**, u operaciones que trabajan sobre valores que se encuentran en una celda, por ejemplo, puedes definir que el valor de la celda A3 se calcula como A3 = A1 * A2. Excel te mostrará el valor de aplicar esta operación a los valores disponibles en ese momento en las celdas A1 y A2, en nuestro caso se verá en A3 el número 6.
 
-[caption id="attachment_3123" align="aligncenter" width="141"][![Definiendo el valor de una celda en función de otras dos](http://www.lnds.net/blog/wp-content/uploads/2012/11/Captura-de-pantalla-2012-11-21-a-las-20.54.00.png)](http://www.lnds.net/blog/wp-content/uploads/2012/11/Captura-de-pantalla-2012-11-21-a-las-20.54.00.png) Definiendo el valor de una celda en función de otras dos[/caption]
+{% img  center http://www.lnds.net/blog/wp-content/uploads/2012/11/Captura-de-pantalla-2012-11-21-a-las-20.54.00.png 141 'Definiendo el valor de una celda en función de otras dos' %}
 
 Lo "_interesante"_ es que esta operación  no cambia el valor de las celdas que son usadas como **argumentos. **Esto quiere decir que en Excel no hay **efectos laterales**, el resultado de la función sólo afecta a aquellos que usen el resultado, pero no a los argumentos de entrada.
 
@@ -33,17 +35,16 @@ Veamos que pasa si agregamos otras ecuaciones a nuestra planilla, haciendo que u
 
 
 
-Por ejemplo: A4=A1+2, B3=A2*A2, B4=A1-A2, C3 = B3-B4, C4 = B3*B4.
+Por ejemplo: 
 
+> A4=A1+2, B3=A2*A2, B4=A1-A2, C3 = B3-B4, C4 = B3*B4.
 
 
 
 Excel nos permte ver las dependencias de esta secuencia de cálculos:
 
 
-
-
-[caption id="attachment_3124" align="aligncenter" width="303"][![Dependencias entre las celdas](http://www.lnds.net/blog/wp-content/uploads/2012/11/Captura-de-pantalla-2012-11-21-a-las-21.03.11.png)](http://www.lnds.net/blog/wp-content/uploads/2012/11/Captura-de-pantalla-2012-11-21-a-las-21.03.11.png) Dependencias entre las celdas[/caption]
+{% img center http://www.lnds.net/blog/wp-content/uploads/2012/11/Captura-de-pantalla-2012-11-21-a-las-21.03.11.png 303 'Dependencias entre las celdas' 'Dependencias entre las celdas' %}
 
 Decimos que el orden de evaluación está dado por las dependencias de los datos.
 
@@ -51,15 +52,14 @@ Otra cosa interesante es que dados los mismos valores de entrada el resultado fi
 
 Consideren la siguiente función en C:
 
-
-> int calc(int x, int y)
+{% codeblock lang:c %}
+int calc(int x, int y)
 {
-static int z = 0;
-z = z + x * y;
-return z;
-
+	static int z = 0;
+	z = z + x * y;
+	return z;
 }
-
+{% endcodeblock %}
 
 
 
@@ -78,14 +78,10 @@ Las propiedades más importantes de la programación funcional están disponible
 Pero si nunca te has animado a aprender la programación funcional, quizás es hora de que abras una planilla de cálculo y empieces a jugar con ella, verás que es muy iluminador.
 
 Ejercicios:
-
-
-
+-----------
 	
-  * Calcula la [sucesión de Fibonacci](http://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci) en Excel
-
-	
-  * ¿Es posible crear funciones recursivas en Excel? (sin usar VB  o algún lenguaje de programación para "extender" excel).
+> * Calcula la [sucesión de Fibonacci](http://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci) en Excel
+> * ¿Es posible crear funciones recursivas en Excel? (sin usar VB  o algún lenguaje de programación para "extender" excel).
 
 
 
