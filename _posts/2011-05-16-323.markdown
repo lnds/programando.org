@@ -1,0 +1,30 @@
+---
+comments: true
+date: 2011-05-16 02:09:34
+layout: post
+slug: '323'
+title: Cambio de formato
+wordpress_id: 323
+categories:
+- Sin categoría
+---
+
+He recibido algunos comentarios en el sentido de que es dificil seguir el curso de programación en el blog. Efectivamente, cuando uno está leyendo un tutorial o curso se hace necesario poder seguir el orden de los capítulos, acceder a la tabla de contenidos y saber que viene antes y que viene después. El formato del blog no permite esto. Así que con el fin de remediar esta incomodidad he decidido traspasar el texto del curso a un formato distinto.
+
+He decidido que voy a usar [Sphinx](http://sphinx.pocoo.org/), una herramienta bastante popular entre los desarrolladores Pyhton, de hecho es usada para escribir la documentación de Python.
+
+Esto tiene varias ventajas adicionales, entre otras:
+
+
+
+	
+  1. Podré mantener el texto en un repositorio Git.
+
+	
+  2. Es facil con Sphinx generar otros formatos, como PDF, por ejemplo.
+
+	
+  3. Permitirá separar el contenido del blog con el del curso.
+
+
+Así que les pido un poco de paciencia, mientras hago este cambio, pronto retomaremos el curso. Lo bueno es que podremos tocar otros temas en el blog.

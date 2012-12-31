@@ -1,0 +1,25 @@
+---
+comments: true
+date: 2011-04-14 00:56:28
+layout: post
+slug: gracias
+title: Gracias
+wordpress_id: 243
+categories:
+- Sin categoría
+---
+
+Hemos completado lo básico en el [curso de programación](http://www.programando.org/blog/aprende-a-programar/) y pronto vamos a retomarlo, les pido paciencia. Al respecto me gustaría que me ayudaran con sus comentarios, críticas, y observaciones. También quiero pedirles que me ayuden a difundir este material.
+
+Ya llevo más de un mes con este nuevo proyecto, y les quiero agradecer el apoyo, los retweets, y los comentarios positivos que he recibido. También a los 22 primeros fans en la [página de facebook](https://www.facebook.com/pages/La-Sombra-de-Dijkstra/193081984063924).
+
+
+Pueden enviarme sugerencia de otros temas técnicos que les gustaría que tratara. Este es un espacio para difundir información técnica en nuestro idioma, hay mucho que hacer. Si quieren ayudar aportando con temas, escribir algún artículo son bienvenidos, sólo déjenme un mensaje en los comentarios.
+
+Este pequeño post es para agradecerles su paciencia y tiempo.
+
+¿Qué se les ocurre que podríamos hacer para difundir más nuestro curso de programación?
+¿Que les ha parecido el material publicado hasta ahora?
+
+
+

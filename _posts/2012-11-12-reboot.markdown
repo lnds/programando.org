@@ -1,0 +1,24 @@
+---
+comments: true
+date: 2012-11-12 00:13:52
+layout: post
+slug: reboot
+title: Reboot
+wordpress_id: 525
+categories:
+- Destacados
+---
+
+Hola, bienvenidos al reboot de La Sombra De Dijsktra, a partir de hoy este sitio tendrá un nuevo estilo. La idea es reformular este proyecto invitando a participar a nuevos autores. Además tendremos otro tipo de material no tan técnico, pero necesario para desarrollar otras habilidades necesarias para todo profesional de la programación.
+
+Durante un tiempo vamos a tener algunos baches, y puede que algunas cosas no estén funcionando tan bien como esperamos. Les pido paciencia.
+
+Inicialmente se incorpora a este blog Daniel Molina Wegener , quien escribirá algunos artículos con mayor frecuencia en este sitio, y estará además a cargo de la sección Programación Funcional.
+
+En esta nueva etapa este sitio funcionará más como una revista, con secciones permanentes las que aparecen destacadas en el front page.
+
+Los invito a visitarnos, porque vamos a tener muchas novedades y una mayor cantidad de contenido útil para todos los apasionados de la programación en habla hispana.
+
+Esperamos  que les guste esta nueva etapa.
+
+[![](http://www.programando.org/blog/wp-content/uploads/2012/11/288950_8598-1024x768.jpg)](http://www.programando.org/blog/wp-content/uploads/2012/11/288950_8598.jpg)
