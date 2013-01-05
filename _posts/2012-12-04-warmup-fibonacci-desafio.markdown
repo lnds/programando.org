@@ -17,16 +17,18 @@ Recordemos que los números de Fibonacci se definen como la secuencia de número
 
 > Fib(1) = 1
 
-Fib(2) = 1
+> Fib(2) = 1
 
-Fib(3) = 2
+> Fib(3) = 2
 
-Fib(4) = 3
+> Fib(4) = 3
 
-Fib(i) = Fib(i-1)+Fib(i-2)  (para i>= 3)
+> Fib(i) = Fib(i-1)+Fib(i-2)  (para i>= 3)
 
 
 Es decir, cada número de fibonacci es la suma de los números previos de Fibonacci.
+
+<!-- more -->
 
 El ejercicio consiste en lo siguiente: construir un programa que reciba 2 números a y b, la salida del programa debe ser la cantidad de números de Fibonacci que hay entre a y b.
 
@@ -36,4 +38,4 @@ En otras palabras, para los número a y b, se debe contar los números de Fibona
 
 Tienen 2 semanas de plazo para resolver este desafío.
 
-[![](http://www.programando.org/blog/wp-content/uploads/2012/12/fibonacci-shell.jpg)](http://www.programando.org/blog/wp-content/uploads/2012/12/fibonacci-shell.jpg)
+{% img center http://www.programando.org/blog/wp-content/uploads/2012/12/fibonacci-shell.jpg %}
