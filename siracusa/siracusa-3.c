@@ -4,7 +4,7 @@
 typedef unsigned long long INT;
 
 INT orbita(INT n) {
-	INT largo = 0;
+	INT largo = 1;
 	do {
 		if (n&0x01)
 			n = ((n<<1)|1)+n;

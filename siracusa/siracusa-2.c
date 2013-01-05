@@ -24,6 +24,6 @@ int main(int argc, char* argv[]) {
 		INT l = orbita(i);
 		if (l > lmax) { lmax = l; index = i; }
 	}
-	printf ("%llu\n", index);
+	printf ("%llu, %llu\n", index, lmax);
 	return 0;
 }
