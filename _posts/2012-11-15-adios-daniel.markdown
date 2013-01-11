@@ -17,7 +17,7 @@ tags:
 - programadores
 ---
 
-[caption id="attachment_543" align="alignleft" width="300"][![](http://www.programando.org/blog/wp-content/uploads/2012/11/damowe.png)](http://www.programando.org/blog/wp-content/uploads/2012/11/damowe.png) Daniel Molina Wegener, @damowe, dmw[/caption]
+{% img left http://www.programando.org/blog/wp-content/uploads/2012/11/damowe.png %}
 
 Daniel Molina dejó este mundo este lunes, de forma inexplicable, este joven brillante ya no estará con nosotros.
 
