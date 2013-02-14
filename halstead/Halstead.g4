@@ -1,5 +1,6 @@
 grammar Halstead;
 
+
 @header {
 	import java.util.*;
 	import java.lang.Math;
@@ -62,6 +63,30 @@ metric : token* {
 
 	  };
 
+e : token* {
+			int n1 = operators.keySet().size();
+
+			int N1 = operatorsList.size();
+
+			int n2 = operands.keySet().size();
+
+			int N2 = operandsList.size();
+
+			int N = N1 + N2;
+			int n = n1 + n2;
+
+			double V = N*log2(n);
+			double D = (n1/2.0)*(N2/(double)n2);
+			double L = 1.0/D;
+			double E = V*D;
+
+			println("E = "+E);
+			println("T = "+(E/18.0));
+
+
+
+	  };
+
 token 
 	: operator { 
 		String op = $operator.text;
@@ -89,12 +114,29 @@ operator :
 // 'input' | 'print' |  // <- para el ejemplo del blog
 'if'| 'then'| 'else'| 'unless'| 'while'| 'loop'| 'for'| 'foreach'| 'each'| 'do'| 'in'| 'between'
 | 'when'| 'case'| 'switch'| 'repeat'| 'until'| 'try'| 'catch'| 'except'| 'on'| 'select'| 'from'| 'where'| 'class'| 'struct'| 'begin'| 'end'| 'program'| 'interface'| 'implementation'| 'uses'| 'import'| 'package'| 'module'| 'super'| 'this'| 'me'| 'self'| 'break'| 'go'| 'to'| 'goto'| 'downto'| 'default'| 'ensure'| 'rescue'| 'require'
-| '<'| '>'| '<>'| '<='| '>='| '<=>'| '='| '=='| '=/='| '/'| '/='| '*'| '*=' | '+'| '+='| '-'| '-='| '~'| '~='| '^'| '^='| '&'| '&='| '&&'| '|'| '||'| '|='| 'and'| 'or'| 'not'| '!'| '!='| '!!'| '@'| '#'| '$'| '%'| 'mod'| 'div' ;
+| '<'| '>'| '<>'| '<='| '>='| '<=>'| '='| '=='| '=/='| '=~' | '/'| '/='| '*'| '*=' | '+'| '+='| '-'| '-='| '~'| '~='| '^'| '^='| '&'| '&='| '&&'| '|' | '||'| '|='| 'and'| 'or'| 'not'| '!'| '!='| '!!'| '@'| '#'| '$'| '%'| '?' | 'mod'| 'div' ;
 
-operand : STRING | TOKEN ;
+operand
+	: TOK
+	| STRING
+	;
 
-STRING : '"' .*? '"' | '\'' .*? '\'' ;
 
-TOKEN : [_a-zA-Z0-9]+;
+TOK : [_a-zA-Z0-9]+ 
+	  | ESC_SEQ
+	  ;
 
-WS : [ \t\r\n\(\)\[\]\{\}\.\,\:\;]+ -> skip;
+
+STRING
+    :  '"' ( ESC_SEQ |  ~('\\'|'"') )* '"'
+    |  '\'' ( ESC_SEQ | ~('\\'|'\'') )* '\''
+    ;
+
+fragment
+ESC_SEQ
+    :   '\\' ( '\"'  | '\''  | '\\' | '|' | [a-zA-Z0-9]+ | '(' | ')' | '{' | '}' | '[' | ']' 
+    | '+' | '*' | '-' | '/' | '^' | '%' | '$' | '&' | '<' | '>' | '=' | '~' | '!'
+    | '@' | '#' | '.' | ',' | ';' | ':' | '?' | '\n' | '\r') ;
+
+
+WS : ([ \r\n\t] | '(' | ')' | '[' | ']' | '{' | '}' | '.' | ';' | ':' | ',')+ -> skip;
