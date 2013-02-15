@@ -123,7 +123,7 @@ operand
 
 
 TOK : [_a-zA-Z0-9]+ 
-	  | ESC_SEQ
+	  | ESC_SEQ+
 	  ;
 
 
