@@ -7,6 +7,14 @@ categories:
 - Coding Dojo
 - Desafíos
 ---
+
+ACTUALIZACIÓN 1 DE MAYO 21:00 horas
+Estimados amigos, el plazo para participar ya se cumplió, tenemos 6 participantes. Lamentablemente no he podido organizar el tiempo para revisar las participaciones. Así que los resultados estarán dentro de los próximos días.
+Saludos y gracias a todos los que han participado.
+
+*************************************************************
+
+
 Uno de los problemas comunes en bio informática es el de tratar de encontrar similitud entre secuencias de genes.
 
 Los genes, en bio informática, se representan como secuencias de 4 posibles letras A,C, G o T (A de Adenina, C de Citosina, G de Guanina y T de Timina, las cuatro bases de los ácidos nucléicos como el ADN o el ARN).
