@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*
+ Author: Rodrigo Aliste-Prieto (raliste@gmail.com)
+ Version: 1
+ Date: 14 September 2013
+ Tested on: Chrome, Safari and Firefox.
+*/
+body, div {
+  margin: 0;
+  padding: 0;
+}
+.yinyang, .yinyang:after, .yinyang:before, .yin:after, .yin:before, .yang:after, .yang:before {
+  position: absolute;
+  display: block;
+  content: "";
+  background-color: black;
+}
+.yinyang, .yin:after, .yin:before, .yang:after, .yang:before {
+  border-radius: 50%;
+}
+.yinyang {
+  width: 300px;
+}
+.yinyang, .yinyang:before {
+  height: 300px;
+}
+.yinyang:before {
+  background-color: white;
+  border-radius: 300px 0 0 300px;
+}
+.yinyang:before, .yin:before, .yang:before {
+  width: 150px;
+}
+.yin:before, .yang:after {
+  background-color: white;
+}
+.yin:after, .yang:after {
+  width: 30px;
+  height: 30px;
+  top: 210px;
+  left: 135px;
+}
+.yin:after {
+  top: 60px;
+}
+.yin:before, .yang:before {
+  height: 150px;
+  left: 75px;
+  top: 150px;
+}
+.yin:before {
+  top: 0;
+}
+</style>
+</head>
+<body>
+<div class="yinyang">
+  <div class="yin"></div>
+  <div class="yang"></div>
+</div>
+</body>
+</html>

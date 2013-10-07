@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+		<title>YinYang CSS</title>
+		<style>
+		    body { margin: 5%; }
+		
+			#yin-yang {
+				width: 175px;
+				height: 348px;
+				background: white;
+				border: 2px solid black;
+				border-right: 175px solid black;
+				border-radius: 100%;
+				box-shadow:0 0 10px 1px #CCC;
+				position: relative;
+			}
+			
+			#yin-yang:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				background: black;
+				border: 65px solid white;
+				border-radius: 100%;
+				width: 44px;
+				height: 44px;
+			}
+			
+			#yin-yang:after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background: white;
+				border: 65px solid black;
+				border-radius:100%;
+				width: 44px;
+				height: 44px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="yin-yang"></div>
+	</body>
+</html>

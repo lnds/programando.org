@@ -1,0 +1,33 @@
+#olaquehace {
+ width: 100px; height: 200px;
+ background: #fff;
+ border-color: #000;
+ border-style: solid;
+ border-width: 2px 100px 2px 2px;
+ border-radius: 100%;
+ position: relative;
+}
+ 
+#olaquehace:before {
+ content: "";
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ background: #fff;
+ border: 36px solid #000;
+ border-radius: 100%;
+ width: 28px;
+ height: 28px;
+}
+ 
+#olaquehace:after {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 50%;
+ background: #000;
+ border: 36px solid #fff;
+ border-radius:100%;
+ width: 28px;
+ height: 28px;
+}

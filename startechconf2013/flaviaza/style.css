@@ -1,0 +1,43 @@
+.jing_jang{
+  width: 96px;
+  height: 96px;
+  border: 2px solid #000;
+  border-radius: 48px;
+  position: relative;
+}
+.jang{
+  width: 48px;
+  height: 96px;
+  border-radius: 48px 0px 0 48px;
+}
+.jing_jang:after, .jing_jang:before, .jang:before, .jang:after{
+  display: block;
+  position: absolute;
+  content: "\00a0";
+}
+.jing_jang, .jing_jang:after, .jang:before{
+  background: #000;
+}
+.jing_jang:before, .jang, .jang:after{
+  background: #fff;
+}
+.jing_jang:before, .jang:before{
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  left: 24px;
+  top: 0;
+}
+.jing_jang:after, .jang:after{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  top: 18px;
+  left: 43px;
+}
+.jang:before {
+  top: 48px;
+}
+.jang:after{
+  top: 68px;
+}
