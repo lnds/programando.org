@@ -1,0 +1,6 @@
+input ("ingrese un valor:", a)
+if a <= 100 then
+   print ("ganaste")
+else
+   print ("perdiste")
+

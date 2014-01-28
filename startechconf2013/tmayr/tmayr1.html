@@ -1,0 +1,36 @@
+<!-- tomada de http://jsfiddle.net/m3Nfz/4/ -->
+<style>
+.yinyang{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, black 50%, white 50%);
+    border-radius: 100%;
+    position: relative;
+    border: 2px solid black;
+}
+
+.yinyang:after{
+    content: "";
+    background: black;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: 110px;
+    top: 40px;
+    border-radius: 100%;
+    box-shadow: 40px 100px 0 white;
+}
+
+.yinyang:before{
+    content: "";
+    background: black;
+    height: 100px;
+    width: 100px;
+    left: 50px;
+    top: 100px;
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 0 -100px 0 white;
+}
+</style>
+<div class="yinyang"></div>

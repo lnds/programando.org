@@ -1,0 +1,64 @@
+<!-- tomado de https://gist.github.com/6567543/4bc2d770cf32ef54f42c8120731672d7d24215df -->
+<style type="text/css">
+/* CSS Yin Yang */
+#body{
+background-color:#aaa;
+}
+#container{
+	background:#eee;
+	width:40%;
+	height:500px;
+	margin:0 auto;
+	border-radius:50%;
+	overflow:hidden;
+	box-shadow:0 0 10px 1px #aaa
+}
+#yin,
+#yang{
+	width:50%;
+	height:inherit;
+	float:left;
+	position:relative;
+}
+#yin,#yin .inner,#yang .circle{
+	background-color:white;
+}
+#yang,#yang .inner, #yin .circle{
+	background-color:black;
+}
+#yin .inner{
+	right:-50%;
+	top:0;
+}
+#yang .inner{
+	left:-50%;
+	bottom:0;
+}
+.inner{
+	height:50%;
+	width:100%;
+	position:absolute;
+	border-radius:50%;
+	z-index:1;		
+}
+.inner .circle{
+	height:15%;
+	width:15%;
+	position:absolute;
+	top:43%;
+	left:50%;
+	border-radius:50%;	
+}
+</style>
+<div id="container">
+	<div id="yin">
+		<div class="inner">
+			<div class="circle"></div>
+		</div>
+	</div>
+	<div id="yang">
+		<div class="inner">
+			<div class="circle"></div>
+		</div>
+	</div>
+</div>
