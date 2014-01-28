@@ -5,6 +5,12 @@ date: 2013-09-14 12:48
 comments: true
 categories: 
 ---
+**Actualización 5 de octubre**
+
+El plazo final para presentar las soluciones es hoy 5 de octubre a las 23:59 horas, así que aún tienen casi un día para participar. 
+
+------------------------------------------------------
+
 
 En esta oportunidad les presento dos desafíos que hemos preparado en conjunto con nuestros amigos de StartechConf 2013. 
 
@@ -38,7 +44,7 @@ En este caso las instrucciones de dibujo se expresan como un objeto JSON, y debe
 
 Por ejemplo, un dibujo en JSONDrawing se expresaría así:
 
-[
+	[
     {
         "background": "white"
 		},
@@ -56,7 +62,7 @@ Por ejemplo, un dibujo en JSONDrawing se expresaría así:
         "fill": "yellow",
         "box": [100, 100, 150, 180]
     }
-]
+	]
 
 En este caso se dibuja un círculo relleno rojo, una linea y un rectángulo relleno de amarillo con el borde azul.
 
