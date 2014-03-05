@@ -1,0 +1,19 @@
+---
+comments: true
+date: 2011-03-23 11:58:15
+layout: post
+slug: repl
+title: REPL
+wordpress_id: 105
+categories:
+- Aprendiendo a programar
+tags:
+- aprendiendo
+- curso
+- eval()
+- loop
+- print()
+- programas
+- REPL
+---
+

@@ -1,0 +1,54 @@
+---
+comments: true
+date: 2011-03-10 01:52:44
+layout: post
+slug: codigo
+title: Código
+wordpress_id: 54
+categories:
+- Aprendiendo a programar
+tags:
+- bits
+- códigos
+- curso
+- lenguajes
+---
+
+Tienes unos 10 años y tu mejor amigo vive a unos pocos metros de distancia tuya, su ventana y la tuya se enfrentan, así que en la noche puedes conversar con él, hasta que los padres avisan que hay que "apagar la luz y acostarse".
+¡Qué lata! No sería genial tener una manera ideal de comunicarse con tu amigo? Bueno, hoy en día los chicos de esa edad tienen un teléfono móvil, pero no muchos padres les permiten gastarse mucho dinero en mensajes SMS, pero imaginen que estamos hablando de chicos de hace unos años atrás, de esos que tenían que ingeniárselas para seguir conversando con sus amiguitos en la noche. Una forma de hacerlo es con linternas.
+
+![](http://www.programando.org/blog/wp-content/uploads/2011/03/Linterna-300x203.jpg)
+
+A los 10 años ya sabes escribir, así que un modo de hacerlo es dibujando las letras en el aire con la linterna. Un círculo grande para la O, una raya vertical para la I, dibujas la L trazando una raya hacia abajo y otra hacia la derecha. Pero este sistema tiene un problema, al poco rato te das cuenta que es muy difícil de seguir. Pero seguramente has visto en alguna película, o sabes que los marinos usan unos faros, en que prenden y apagan las luces para dar señales. Se puede armar un alfabeto, si prendes y apagas la linterna una vez entonces tienes una A, si prendes y apagas 2 veces tienes una B, la C son 3 destellos de tu linterna, 4 destellos la D, y así, hasta la Z que serían 27 destellos. Tienes que hacer una pausa entre letra y letra, y una pausa más larga entre palabras. De este modo, si quieres decir "HOLA AMIGO COMO ESTAS" vas a necesitar 198 destellos (sin incluir ningún signo de puntuación, que hemos olvidado incluir en nuestra tabla).
+
+[![](http://www.programando.org/blog/wp-content/uploads/2011/03/CodigoMorse-182x300.png)](http://www.programando.org/blog/wp-content/uploads/2011/03/CodigoMorse.png)¿Debe haber una manera más astuta de hacer esto?, te preguntarás,  y claro, la hay, alguien ya propuso una manera de resolver el problema se conoce como [Código Morse](http://es.wikipedia.org/wiki/Codigo_morse), donde se usan dos tipos de destellos de luz, uno corto, y otro largo. Para poder escribirlo en papel se sigue la convención de que el destello corto es un punto ".", y el largo una raya "-". En el Código Morse permitiría  la frase HOLA AMIGO COMO ESTAS se escribiría así:
+
+    
+    ....  ---  .-..  .-       .-  --  ..  --.  ---       -.-.  ---  --  ---      .  ...  -  .-  ...
+
+
+Esos son 47 destellos, lo que constituye un increible ahorro. Este código tan compacto fue una revolución en su tiempo, y era el que se usaba en el telégrafo. La sigla [SOS](http://es.wikipedia.org/wiki/SOS), usada universalmente como señal de socorro viene de que esas tres letras son las más simples de memorizar, 3 puntos, 3 rayas, 3 puntos. Hasta hace pocos años era necesario saber el código morse para sacar licencia de radio aficionado.
+
+Bueno, este es un ejemplo de código, y precisamente con esta historia  Charles Petzold introduce el concepto en su notable libro[Code: The Hidden Language of Computer Hardware and Software](http://www.amazon.com/gp/product/0735611319/ref=as_li_qf_sp_asin_tl?ie=UTF8&tag=lanaturaledel-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0735611319)![](http://www.assoc-amazon.com/e/ir?t=lanaturaledel-20&l=as2&o=1&a=0735611319) (Código: El Lenguaje Oculto del Hardware y Software del Computador).
+
+El código es un sistema para transferir información entre las personas y entre estas y las máquinas. Nuestro vocabulario es un tipo de código. Los sonidos que hacemos con nuestras bocas son entendibles por quienes nos escuchen y entiendan nuestro **lenguaje**. Tenemos la capacidad transcribir nuestras palabras a letras en textos impresos, como libros, blogs, incluso tweets.
+
+Hay códigos que permiten a la gente sordomuda comunicarse, a los ciegos leer (el [Braille](http://es.wikipedia.org/wiki/Braille_(lectura))), hay códigos de banderas, hasta códigos que usan señales de humo.
+
+Los computadores usan distintos tipos de códigos. Hay códigos para almacenar información, hay códigos para transmitir información, hay códigos para ejecutar instrucciones. Y hay códigos que nos permiten entender los códigos usados por el computador. Los lenguajes de programación son ese tipo de códigos, son una manera de transcribir operaciones, o instrucciones que queremos darle al computador para que ejecute.
+
+Cuando hablamos de computadores, todo es código, en el hardware y en el software. En este blog nos vamos a dedicar a explorar un tipo de código, el de los lenguajes de programación, cuando usemos la palabra código nos referiremos a ese tipo de códigos, a menos que explicitemos lo contrario. Pero codificar, es decir, escribir el código, los símbolos, es sólo una parte del arte de programar. En inglés codificar se dice "coding", y se usa como una suerte de sinónimo de "programming", para mi programar es mucho más que codificar en algún lenguaje de programación. Espero que ustedes lleguen a apreciar la diferencia.
+
+
+
+Ejercicios:
+
+1.- Asume que un punto en código morse se representa con el número 0 (cero) y la raya con el número 1, transcribe el mensaje en código Morse de más arriba a la representación binaria. Usa la tabla de nibbles que mostramos en "[partir desde cero](http://www.programando.org/blog/2011/03/partir-desde-cero/)", y expresa el mensaje en hexadecimal.
+
+2.- Si usamos la regla de representar el punto como un cero, y la raya como un 1, ¿cuantos bits se necesitan para representar cada letra? ¿Qué problemas tiene esta codificación? ¿Cómo los solucionarías?
+
+3.- Inventa un código que representen las letras del alfabeto, los 10 dígitos, y algunos símbolos y codifícalos en grupos de 6 bits.
+
+
+
+

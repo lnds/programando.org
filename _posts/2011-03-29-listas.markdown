@@ -1,0 +1,243 @@
+---
+comments: true
+date: 2011-03-29 11:00:18
+layout: post
+slug: listas
+title: Listas
+wordpress_id: 169
+categories:
+- Aprendiendo a programar
+tags:
+- comprensión
+- extensión
+- funciones
+- listas
+- paradigma funcional
+- secuencias
+- tuplas
+---
+
+Hasta ahora hemos trabajado con expresiones y funciones que operan con unos pocos argumentos. Pero, ¿cómo podríamos crear una función que calcule el promedio de una lista de números?
+
+Para operar con una gran cantidad de datos debemos usar otras estructuras, en el caso de python una de estas estructuras son las listas.
+
+Las siguientes son listas en python:
+
+    
+    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    
+    ['a', 'b', 'c', 'd', 'e']
+    
+    ['a', 1, 'b', 2, 'c', 3]
+
+
+Podemos ver el largo de una lista usando la función len, y por supuesto podemos asignar listas a variables:
+
+    
+    >>> len([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+    10
+    >>> len(['a', 'b', 'c', 'd', 'e'])
+    5
+    >>> lista = ['a', 1, 'b', 2, 'c', 3]
+    >>> len(lista)
+    6
+
+
+Por cierto, la función **len()** se puede usar con strings, por ejemplo: len("PYTHON") == 6.
+
+**Secuencias**
+
+Ambas, las listas y los strings (cadenas) corresponden a lo que en python se llaman secuencias.
+Las secuencias comparten estas características:
+
+
+
+	
+  * Se puede consultar el largo de una secuencia con la función **len()**
+
+	
+  * Las secuencias pueden ser indexadas ejemplo:
+['P','Y','T','H','O','N'][2] == 'T'
+'PYTHON'[2] == 'T'
+
+	
+  * Se puede obtener un segmento de una secuencia con lo que se obtiene una sub secuencia:
+['P','Y','T','H','O','N'][2:4] == ['T','H']
+'PYTHON'[2:4] == 'TH' lo que
+
+
+Podemos convertir un string en una lista usando la función **list()**
+
+
+    
+    
+    >>> list("PYTHON")
+    ['P', 'Y', 'T', 'H', 'O', 'N']
+    
+
+
+
+La operación inversa, es decir, convertir una lista en un string es un tanto extraña pero ya la entenderemos más adelante cuando estudiemos objetos.
+
+
+    
+    
+    >>> "".join(['P', 'Y', 'T', 'H', 'O', 'N'])
+    "PYTHON"
+    
+
+
+
+Hay varias operaciones pre definidas sobre listas, a continuación veremos algunas:
+
+
+    
+    
+    >>> lista = [22,55,28,32,12,11,16,78,7,8,33]
+    >>> min(lista) # el elemento con el valor mínimo
+    7
+    >>> max(lista) # el elemento con el valor máximo
+    78
+    >>> sum(lista) # la suma de todos los elementos
+    302
+    >>> sum(lista) / len(lista) # valor promedio
+    27.454545454545453
+    >>>
+    
+
+
+
+Con el último ejemplo podemos responder la pregunta al principio de este capítulo, ¿cómo calcular el promedio de un lista de números? Definamos la función promedio:
+
+
+    
+    
+    def promedio(lista):
+         return sum(lista) / len(lista)
+    
+
+
+
+**Listas por extensión y por comprensión**
+
+Cuando nombramos todos los elementos de una lista decimos que la nombramos por extensión, por ejemplo:
+
+
+    
+    
+    alfabeto = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    digitos = [0,1,2,3,4,5,6,7,8,9]
+    
+    letras = ['a','b','c','d','e']
+    
+    letras_en_python = ['P','Y','T','H','O','N']
+    
+    pares = [0,2,4,6,8]
+    
+    impares = [1,3,5,7,9]
+    
+
+
+
+Pero hay otra manera de escribir listas, por comprensión, en este caso decimos que nos interesan ciertos elementos que pertenecen a otra lista y que cumplen una condición.
+
+Veamos como podemos expresar las mismas listas de arriba pero por comprensión:
+
+
+    
+    
+    alfabeto = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    
+    digitos = [0,1,2,3,4,5,6,7,8,9]
+    
+    letras = [letra for letra in alfabeto if letra < 'f']
+    letras_en_python = [c for c in "PYTHON"]
+    
+    pares = [n for n in digitos if n % 2 == 0]
+    
+    impares = [n for n in digitos if n % 2 == 1]
+    
+    
+
+
+
+La forma general de una lista por extensión es:
+
+
+
+> [valor **for** valor in lista **if** condicion sobre v]
+
+
+
+Más adelante veremos otras formas de expresar listas más complejas. La parte **if condicion sobre v** es opcional.
+
+
+En estos casos parece que al escribir por extensión no ganamos mucho, pero este método es muy útil cuando trabajamos con listas más largas, como vamos a ver a continuación.
+
+**Rangos**
+
+Existe la función **range()**, esta función retorna una secuencia de números.
+La forma general de invocarla es range(inicio, tope, paso) y con esto genera una secuencia que parte en el número dado en el argumento inicio y termina antes de llegar al valor tope, el argumento paso se usa para avanzar en cierta cantidad. Inicio y paso son opcionales. Veamos algunos ejemplos:
+
+
+    
+    
+    >>> range(2, 100, 2)
+    range(2, 100, 2)
+    >>> [r for r in range(2, 100, 2)]
+    [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98]
+    >>> [r for r in range(3, 9)]
+    [3, 4, 5, 6, 7, 8]
+    
+
+
+
+Si se fijan cuando invocan range() lo que se obtiene es objeto tipo rango, este objeto puede ser usado en expresiones como las de las listas por comprensión.
+
+Escribamos algunas secuencias en base a rangos:
+
+
+    
+    
+    >>> [i * 2 for i in range(10)]
+    [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+    
+    >>> [i * j for i in range(1, 11) for j in range(1,11)]
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 3, 6, 9, 12, 15, 
+    18, 21, 24, 27, 30, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 5, 10, 15, 20, 25, 30, 
+    35, 40, 45, 50, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 7, 14, 21, 28, 35, 42, 
+    49, 56, 63, 70, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 9, 18, 27, 36, 45, 54,
+    63, 72, 81, 90, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+    
+    >>> [letra * j for letra in ['a','b','c'] for j in range(5)]
+    ['', 'a', 'aa', 'aaa', 'aaaa', '', 'b', 'bb', 'bbb', 'bbbb', 
+    '', 'c', 'cc', 'ccc', 'cccc']
+    
+
+
+
+Bien, suficiente por hoy, vamos con los ejercicios:
+
+Ejercicios:
+
+
+
+	
+  1. Modifica el programa calculadora agregándole la función promedio que escribimos en este capítulo. ¿Qué problema tiene esta función? 
+
+
+	
+  2. La función **chr(a)** retorna el carácter con código [ASCII](http://es.wikipedia.org/wiki/ASCII) a, por ejemplo, chr(65) == 'A'. Escribe una secuencia que genere
+las letras de la A a la Z
+
+
+	
+  3. Una dupla se escribe (a, b) y corresponde a un par de elementos, por ejemplo, (1, 'a') es una dupla. Escribe una secuencia que genere todas las duplas de los números del 0 al 9 con las letras del alfabeto.
+
+	
+  4. Escribe una función que reciba como argumento un número N y calcule la suma de todos los números desde 1 a N y el promedio de esos números y los retorne como una dupla. Incorpórala al programa calculadora
+
+
+
+
+

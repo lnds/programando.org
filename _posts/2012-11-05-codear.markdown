@@ -1,0 +1,38 @@
+---
+comments: true
+date: 2012-11-05 00:12:06
+layout: post
+slug: codear
+title: Codear
+wordpress_id: 474
+categories:
+- Aprendiendo a programar
+tags:
+- code
+- codificar
+- programar
+---
+
+Tomado de la Real Academia de la Lengua:
+
+
+> **codear****.**
+
+**1.** intr. Mover los codos.
+
+**2.** intr. Dar golpes con los codos frecuentemente.
+
+**3.** intr._ Am. Mer._ Pedir con insistencia.
+
+**4.** prnl. Dicho de una persona: Tener trato habitual, de igual a igual, con otra o con cierto grupo social.
+
+
+
+
+Usted programa, los necios codean frente a sus computadores, se van a cansar y no lograrán alzar vuelo nunca.
+
+Codear sería en inglés algo así como **jostle**, **hustle** o p**rod. **Code es es código, y Coding sería codificar, o escribir código, también se podría decir desarrollar, pero eso es más amplio, o los profesionales simplemente preferimos traducirlo como programar.
+
+Porque codificar denota transcribir código, en cambio programar implica más, mucho más.
+
+Pronto la solución al último desafío (cuyo premio queda desierto) y la reformulación de este blog.

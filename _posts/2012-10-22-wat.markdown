@@ -1,0 +1,23 @@
+---
+comments: true
+date: 2012-10-22 00:49:35
+layout: post
+slug: wat
+title: Wat
+wordpress_id: 465
+categories:
+- Sin categoría
+---
+
+Disfrútenlo:
+[wat](https://www.destroyallsoftware.com/talks/wat)
+
+
+
+      
+        
+      
+    
+
+
+/Via [Destroy All Software](https://www.destroyallsoftware.com/talks)
